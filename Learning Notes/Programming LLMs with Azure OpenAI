@@ -6,3 +6,13 @@ and tries to fill up the masked words. This makes it better at capturing the con
 This token-by-token calculation results in coherent text output, but promblem: if 1 token has an error, then that error keeps continuing.
 - Usually finetuning was used to tailor models to specific tasks, but with large models like GPT --> Prompt Engineering.
 
+3 Training Approaches:
+1) Causal Language Modelling (CLM): autoregressive method- look at past values to predict next token. Useful for text generation + summarization
+2) Masked Language Modelling (MLM): some random tokens are masked and model predicts these words based on left and right context. Useful for text classification, sentiment analysis, NEM. Not suitable for text 
+generation as in that case it should ignore right context.
+3) Sequence-to-Sequence (Seq2Seq): encoder-decoder architecture- Useful for clear input/output transformation tasks, e.g. translation.
+
+Transformers:
+- Paper: Attention is all you need.
+- Capture long range dependencies, uses parallelization.
+- "self-attention mechanism": ?
