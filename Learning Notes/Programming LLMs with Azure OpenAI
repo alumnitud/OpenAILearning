@@ -1,0 +1,8 @@
+- LLM: like an advanced form of autocomplete. Built on deep learning architectures like transformers (made training process faster using parallel processing).
+- 1st layer of LLM: Word embeddings (vector representations of words). Read about Mikolov's paper- Word2Vec model.
+- BERT model (Bidirectional Encoder Representations from Transformers): During pretraining, the model is given sentences with some words which are masked. It looks in both directions (left and right) for context 
+and tries to fill up the masked words. This makes it better at capturing the context. 
+- GPT: autoregressive model (predicts future values-tokens- from past values). These models can generalize pretty well due to the large param size, so no need of finetuning for a specific scenario.
+This token-by-token calculation results in coherent text output, but promblem: if 1 token has an error, then that error keeps continuing.
+- Usually finetuning was used to tailor models to specific tasks, but with large models like GPT --> Prompt Engineering.
+
